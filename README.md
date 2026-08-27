@@ -5,7 +5,7 @@
 ## 功能
 
 - EC20 4G 拨号：QMI 模式，电信 ctnet（luci-proto-qmi + uqmi）
-- frpc 隧道转发：8 条隧道，`login_fail_exit=false` 防崩溃循环
+- frpc 隧道转发，`login_fail_exit=false` 防崩溃循环
 - Modem Band 图形锁频：modemband + luci-app-modemband（EC20 支持）
 - EC20 SRLTE 一键修复：`fix-ec20-srlte.sh` + LuCI 自定义命令按钮（电信 CDMA 退网后搜不到网时使用）
 - watchcat 断网自愈（预置配置，默认不启用服务）
@@ -20,7 +20,6 @@
 | `target/linux/ramips/mt7620/base-files/etc/board.d/` | 端口（`3:lan 4:wan`）与 LED 配置 |
 | `package/modemband/` | 第三方：频段管理核心（obsy） |
 | `package/luci-app-modemband/` | 第三方：频段管理 LuCI 界面（4IceG） |
-| `files/` | 现场配置（**含密码等敏感信息，已通过 .gitignore 排除，需自行准备**） |
 
 ## 构建
 
